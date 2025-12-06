@@ -1,0 +1,16 @@
+{
+  "domain": "netzero",
+  "name": "Netzero Energy",
+  "version": "0.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/skidder/netzero-ha",
+  "requirements": [],
+  "codeowners": [
+    "@skidder"
+  ],
+  "iot_class": "cloud_polling",
+  "loggers": [
+    "custom_components.netzero"
+  ]
+}
+

@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Netzero",
+        "description": "Enter your Netzero API credentials",
+        "data": {
+          "site_id": "Site ID",
+          "bearer_token": "Bearer token",
+          "netzero_token": "X-Netzero-Token",
+          "user_id": "X-User-Id (optional)",
+          "base_url": "API base URL",
+          "fleet_base_url": "Fleet base URL",
+          "app_version": "App version"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Site already configured"
+    },
+    "options": {
+      "step": {
+        "init": {
+          "title": "Options",
+          "data": {
+            "update_interval": "Update interval (seconds)",
+            "base_url": "API base URL"
+          }
+        }
+      }
+    }
+  }
+}
+
