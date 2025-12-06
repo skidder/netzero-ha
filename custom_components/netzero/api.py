@@ -58,6 +58,8 @@ class NetzeroApiClient:
         }
         headers = {
             "Authorization": f"Bearer {self._bearer_token}",
+            "Accept": "*/*",
+            "Accept-Language": "en-US,en;q=0.5",
             "Content-Type": "application/json",
             "X-Netzero-Token": self._netzero_token,
             "X-Base-Url": self._fleet_base_url,
@@ -65,6 +67,7 @@ class NetzeroApiClient:
             "X-Netzero-App-Version": self._app_version,
             "Origin": "https://app.netzero.energy",
             "Referer": "https://app.netzero.energy/",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:146.0) Gecko/20100101 Firefox/146.0",
         }
         if self._user_id:
             headers["X-User-Id"] = self._user_id
